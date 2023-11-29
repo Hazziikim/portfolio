@@ -68,7 +68,7 @@
     margin: 50px;
     border-radius: 4px;
     position: relative;
-    top: 80px;
+    top: 100px;
 }
 
 .activity-title{
@@ -140,10 +140,12 @@
 }
 
 @media screen and (max-width: 768px){
+
 	.nav {
         flex-direction: column;
         align-items: flex-start;
-        width: 390px;
+        text-align: center;
+        background-size: auto;
     }
 
     .nav-items{
@@ -162,15 +164,15 @@
         height: 150px;
     }
     .title{
-        font-size: 28px;
+        font-size: 25px;
     }
     
     .subtitle{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .profile{
-        background-size: contain;
+        background-size: cover;
     }
 
     .activities{
