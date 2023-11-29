@@ -30,6 +30,7 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 80px;
+    height: 700px;
 }
 .title{
     text-align:center;
@@ -43,6 +44,10 @@
     font-weight: 300;
 }
 
+.style-1{
+    font-weight: bold;
+}
+
 .activities{
     display: flex;
     height: 650px;
@@ -50,7 +55,10 @@
     background-color: aliceblue;
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    z-index: -1;
 }
 
 .activity{
@@ -60,7 +68,7 @@
     margin: 50px;
     border-radius: 4px;
     position: relative;
-    top: 100px;
+    top: 80px;
 }
 
 .activity-title{
@@ -121,7 +129,67 @@
 }
 
 .click{
-    margin-top: 170px;
+    margin-top: 80px;
     font-size: 1.5rem;
     text-align:center;
+}
+
+.paper-class{
+    margin-top: 90px;
+    border-top: 1px solid black;
+}
+
+@media screen and (max-width: 768px){
+	.nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 390px;
+    }
+
+    .nav-items{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .style-1{
+        text-align: center;
+    }
+
+    .main{
+        margin-top: 110px;
+        height: 150px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    
+    .subtitle{
+        font-size: 18px;
+    }
+
+    .profile{
+        background-size: contain;
+    }
+
+    .activities{
+        height: 650px;
+        margin-top: 300px;
+        margin-bottom: 500px;
+        flex-direction: column;
+    }
+
+    #content{
+        width: 310px;
+        height: 200px;
+        margin-top: 40px;
+        margin-bottom: 200px;
+        font-size: 15px;
+    }
+
+    #back{
+         height: 240px;
+    }
+
 }
